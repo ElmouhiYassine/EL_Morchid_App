@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AL-Morchid</string>
+
+    <string-array name="countries_array">
+        <item>Maroc</item>
+        <item>Algerie</item>
+        <item>États-Unis</item>
+        <item>Canada</item>
+        <item>Royaume-Uni</item>
+        <item>France</item>
+        <item>Allemagne</item>
+    </string-array>
+</resources>

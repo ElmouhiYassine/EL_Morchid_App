@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    tools:context=".FruitList">
+
+
+    <TextView
+        android:id="@+id/TxtDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#F0F8FF"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="40dp"
+        android:text="Fruits"
+
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="624dp"
+        android:layout_height="558dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginBottom="328dp"
+        android:background="#FFFFFF"
+        android:dividerHeight="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/TxtDemo"
+        app:layout_constraintTop_toTopOf="@+id/TxtDemo"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revenir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TxtDemo"
+        app:layout_constraintVertical_bias="0.975"
+        android:onClick="onBackClick"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

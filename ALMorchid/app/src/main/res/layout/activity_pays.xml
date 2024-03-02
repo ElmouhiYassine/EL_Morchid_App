@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    tools:context=".PaysActivity">
+
+
+    <!-- activity_country.xml -->
+    <!--    <TextView-->
+    <!--        android:id="@+id/TxtDemo"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:background="#F0F8FF"-->
+    <!--        android:fontFamily="sans-serif-black"-->
+    <!--        android:gravity="center"-->
+    <!--        android:padding="40dp"-->
+    <!--        android:text="Pays"-->
+
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="30dp"-->
+    <!--        android:typeface="serif"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <Spinner
+        android:id="@+id/spinner_pays"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:backgroundTint="#9FB53F"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/countries_array"
+        android:minHeight="68dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="136dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="132dp"
+        android:onClick="onBackClick"
+        android:text="Revenir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TxtDemo"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <ImageView
+        android:id="@+id/payview"
+        android:layout_width="430dp"
+        android:layout_height="330dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spinner_pays"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/morocco" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

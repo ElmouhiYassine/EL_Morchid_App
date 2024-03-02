@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backkk"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liste des Fruits "
+            android:onClick="fruits"/>
+
+        <Button
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grid des Annees"
+            android:onClick="annees"/>
+
+        <Button
+            android:id="@+id/Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spinner des Pays"
+            android:onClick="pays"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
